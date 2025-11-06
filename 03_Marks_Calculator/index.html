@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marks & Attendance Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Home Screen -->
+  <div class="home" id="home">
+    <h1>Select Calculator Type</h1>
+    <div class="icons">
+      <div class="icon-card" onclick="showCalculator('marks')">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Marks" />
+        <p>Marks</p>
+      </div>
+      <div class="icon-card" onclick="showCalculator('attendance')">
+        <img src="https://cdn-icons-png.flaticon.com/512/4849/4849568.png" alt="Attendance" />
+        <p>Attendance</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Marks Calculator -->
+  <div class="calculator" id="marksCalc">
+    <h2>Marks Percentage & CGPA Calculator</h2>
+    <div class="input-grid">
+      <input type="number" id="f1" placeholder="Total Marks 1" />
+      <input type="number" id="m1" placeholder="Marks Got 1" />
+      <input type="number" id="f2" placeholder="Total Marks 2" />
+      <input type="number" id="m2" placeholder="Marks Got 2" />
+      <input type="number" id="f3" placeholder="Total Marks 3" />
+      <input type="number" id="m3" placeholder="Marks Got 3" />
+      <input type="number" id="f4" placeholder="Total Marks 4" />
+      <input type="number" id="m4" placeholder="Marks Got 4" />
+      <input type="number" id="f5" placeholder="Total Marks 5" />
+      <input type="number" id="m5" placeholder="Marks Got 5" />
+    </div>
+
+    <button onclick="calculateMarks()">Calculate</button>
+    <div id="result"></div>
+    <button class="back-btn" onclick="goHome()">⬅ Back</button>
+  </div>
+
+  <!-- Attendance Calculator -->
+  <div class="calculator" id="attCalc">
+    <h2>Attendance Percentage Calculator</h2>
+    <div class="input-grid">
+      <input type="number" id="t1" placeholder="Total Classes (Subject 1)" />
+      <input type="number" id="a1" placeholder="Attended Classes (Subject 1)" />
+      <input type="number" id="t2" placeholder="Total Classes (Subject 2)" />
+      <input type="number" id="a2" placeholder="Attended Classes (Subject 2)" />
+      <input type="number" id="t3" placeholder="Total Classes (Subject 3)" />
+      <input type="number" id="a3" placeholder="Attended Classes (Subject 3)" />
+      <input type="number" id="t4" placeholder="Total Classes (Subject 4)" />
+      <input type="number" id="a4" placeholder="Attended Classes (Subject 4)" />
+      <input type="number" id="t5" placeholder="Total Classes (Subject 5)" />
+      <input type="number" id="a5" placeholder="Attended Classes (Subject 5)" />
+    </div>
+
+    <button onclick="calculateAttendance()">Calculate</button>
+    <div id="attResult"></div>
+    <button class="back-btn" onclick="goHome()">⬅ Back</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

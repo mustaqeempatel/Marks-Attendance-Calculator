@@ -1,0 +1,141 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url("https://e0.pxfuel.com/wallpapers/386/199/desktop-wallpaper-stock-of-book-aesthetic-books-old-books.jpg") no-repeat center center/cover;
+      color: #fff;
+    }
+
+    .home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: rgba(0,0,0,0.7);
+      padding: 50px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .home h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    .icons {
+      display: flex;
+      gap: 50px;
+    }
+
+    .icon-card {
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 20px;
+      width: 180px;
+      height: 180px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .icon-card:hover {
+      background: rgba(255,255,255,0.25);
+      transform: scale(1.05);
+    }
+
+    .icon-card img {
+      width: 90px;
+      height: 90px;
+    }
+
+    .icon-card p {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .calculator {
+      display: none;
+      background: rgba(38, 50, 56, 0.9);
+      padding: 50px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      width: 650px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      font-size: 30px;
+      color: #ffffff;
+    }
+
+    .input-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      justify-items: center;
+      margin-bottom: 25px;
+    }
+
+    input {
+      width: 230px;
+      height: 50px;
+      padding: 12px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      background: #37474f;
+      color: #fff;
+      text-align: center;
+    }
+
+    input::placeholder {
+      color: #b0bec5;
+      font-size: 0.9rem;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #039be5;
+      color: white;
+      border: none;
+      padding: 14px 35px;
+      font-size: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #0288d1;
+      transform: scale(1.05);
+    }
+
+    #result, #attResult {
+      margin-top: 25px;
+      font-size: 20px;
+      line-height: 1.8;
+      color: #fff;
+    }
+
+    .back-btn {
+      background: #ff5252;
+      margin-top: 30px;
+    }
+
+    .back-btn:hover {
+      background: #e53935;
+    }
+    
